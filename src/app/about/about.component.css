@@ -1,0 +1,12 @@
+
+.container{
+    padding: 0;   
+}
+
+.button{
+    border-radius: 5px;
+    border: 1px solid black;
+    background: white;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}

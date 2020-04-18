@@ -12,6 +12,11 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { VideoComponent } from './about/components/video/video.component';
+import { LinksComponent } from './about/components/links/links.component';
+import { UpnextComponent } from './about/components/upnext/upnext.component';
+import { AddvideoComponent } from './about/components/addvideo/addvideo.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,10 +25,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavbarComponent,
     WelcomeComponent,
     AboutComponent,
+    VideoComponent,
+    LinksComponent,
+    UpnextComponent,
+    AddvideoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     BrowserAnimationsModule,
     AlertModule
   ],

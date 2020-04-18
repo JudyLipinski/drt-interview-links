@@ -1,0 +1,6 @@
+<video *ngIf='currentVideo' [src]='currentVideo' height='480' width='720' (ended)='goToNextVideo()' autoplay controls>
+    No video available
+</video>
+<div class='no-video' *ngIf='!currentVideo'>
+        No video available
+</div>

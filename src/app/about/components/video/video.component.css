@@ -1,0 +1,13 @@
+video{
+    height: 100%;
+    width: 100%;
+}
+
+.no-video{
+    height: 480px;
+    background-color: #ccc;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

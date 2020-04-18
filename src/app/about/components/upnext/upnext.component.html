@@ -1,0 +1,9 @@
+
+
+<div class='container'>
+    <span class='title'>Up Next:</span>
+    <div class='links'>
+        <app-links *ngFor='let video of videoList; let i = index' [active]='active === i' [video]='video' (playVideo)='playVideo($event)' (deleteVideo)='deleteVideo($event)'></app-links>
+    </div>
+    <div *ngIf='!videoList || !videoList.length'>No video available</div>
+</div>

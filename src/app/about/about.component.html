@@ -1,1 +1,7 @@
-<p>about works!</p>
+
+<div class='container'>
+    <app-video [currentVideo]='videoList[currentVideoIndex] && videoList[currentVideoIndex].link' (next)='playNext()'></app-video>
+    <app-upnext (playNow)='play($event)' [videoList]='videoList' [active]='currentVideoIndex'></app-upnext>
+    <app-addvideo *ngIf='isPopupOpen' (closePopup)='addVideo($event)'></app-addvideo>
+    <div class='text-right' *ngIf='!isPopupOpen'><button class='button' (click)='showPopup()'>Add Video</button></div>
+</div>

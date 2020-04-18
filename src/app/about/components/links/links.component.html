@@ -1,0 +1,7 @@
+<div class='container' [ngClass]='{"active": active}' (click)='play()'>
+    <div class='wrapper'>
+        <div class='desc'>{{video.description}}</div>
+        <div class='link'>{{video.link}}</div>
+    </div>
+    <button class='button' (click)='delete()'>Delete</button>
+</div>
