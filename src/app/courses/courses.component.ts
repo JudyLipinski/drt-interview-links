@@ -9,6 +9,7 @@ import { CourseModel } from './courses.model';
 })
 export class CoursesComponent implements OnInit {
   editField: string;
+  searchKeyword: string;
   courseList: Array<CourseModel> = [];
   constructor(
     private courseService: CourseService

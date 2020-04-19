@@ -4,9 +4,9 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AlertModule } from './_alert';
-
+import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
@@ -28,7 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     AlertModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2SearchPipeModule,
+    FormsModule
   ],
   bootstrap: [AppComponent]
 })

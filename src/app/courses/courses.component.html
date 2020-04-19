@@ -3,6 +3,11 @@
     <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Course List</h3>
     <div class="card-body">
         <div id="table" class="table-editable">
+            <span class="table-add  mb-3 mr-2" style="float: left;">
+                <a class="text-success">
+                    <input type="text" placeholder="search" class="searchBar" [(ngModel)]="searchKeyword" />
+                </a>
+            </span>
             <span class="table-add float-right mb-3 mr-2">
                 <a class="text-success">
                     <button type="button" class="btnAdd" (click)="add()">Add Course</button>
@@ -15,7 +20,7 @@
                     <th class="text-center">Description</th>
                     <th class="text-center">Remove</th>
                 </tr>
-                <tr *ngFor="let list of courseList; let id = index">
+                <tr *ngFor="let list of courseList |filter:searchKeyword; let id = index ">
                     <td>
                         <span (keyup)="changeValue(id, 'title', $event)" (blur)="updateList(id, 'title', $event)"
                             contenteditable="true">{{list.title}}</span>
@@ -25,7 +30,7 @@
                             (blur)="updateList(id, 'duration', $event)">{{list.duration}} {{list.durationUnit}}</span>
                     </td>
                     <td>
-                        <span contenteditable="true" (keyup)="changeValue(id, 'price', $event)"
+                        <span contenteditable="true" (keyup)="changeValue(id, 'description', $event)"
                             (blur)="updateList(id, 'price', $event)">{{list.description}}</span>
                     </td>
                     <td>
