@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { redirectUnauthorizedTo, canActivate } from '@angular/fire/auth-guard';
+import { CoursesComponent } from './courses/courses.component';
 
 
 const redirectUnauthorizedToLanding = redirectUnauthorizedTo(['login']);
@@ -13,6 +14,9 @@ const routes: Routes = [
 
   {
     path: "about", component: AboutComponent
+  },
+  {
+    path: "courses", component: CoursesComponent
   },
 
 
