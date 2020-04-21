@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoursesComponent } from './courses/courses.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     WelcomeComponent,
     AboutComponent,
     CoursesComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,

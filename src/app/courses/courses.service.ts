@@ -11,7 +11,7 @@ export class CourseService {
     constructor(private http: HttpClient) {
     }
 
-    getInvoiceList() {
+    getCourseList() {
         const queryUrl = '../../assets/data.json';
         return this.http.get<any>(queryUrl)
             .pipe(map((body) => body));

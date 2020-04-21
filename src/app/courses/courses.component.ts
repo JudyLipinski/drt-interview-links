@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CourseService } from './courses.service';
 import { CourseModel } from './courses.model';
 
+
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
@@ -11,6 +12,7 @@ export class CoursesComponent implements OnInit {
   editField: string;
   searchKeyword: string;
   courseList: Array<CourseModel> = [];
+
   constructor(
     private courseService: CourseService
   ) { }
@@ -25,7 +27,7 @@ export class CoursesComponent implements OnInit {
   }
 
   getCourseList = (): void => {
-    this.courseService.getInvoiceList().subscribe(res => {
+    this.courseService.getCourseList().subscribe(res => {
       if (res) {
         this.courseList = res.courses;
       }
