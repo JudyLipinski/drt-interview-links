@@ -1,6 +1,21 @@
 {
-  "links": [],
-
+  "links": [
+    {
+      "id": 1,
+      "name": "Short nature video",
+      "link": "https://www.youtube.com/watch?v=07m_bT5_OrU"
+    },
+    {
+      "id": 2,
+      "name": "Funny Video",
+      "link": "https://www.w3schools.com/html/mov_bbb.mp4"
+    },
+    {
+      "id": 3,
+      "name": "Nature",
+      "link": "https://www.youtube.com/watch?v=668nUCeBHyY"
+    }
+  ],
   "courses": [
     {
       "id": 1,

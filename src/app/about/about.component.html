@@ -1,1 +1,16 @@
-<p>about works!</p>
+<div class="text-center">
+  <div>Current playing:</div>
+  <div>
+    <app-video (finish)="videoFinished()" [source]="data[0]?.link"></app-video>
+  </div>
+  <div class="play-list">
+    <div *ngIf="data.length > 1">Up next:</div>
+    <app-up-next [data]="data" (remove)="removeItem($event)"></app-up-next>
+  </div>
+  <div *ngIf="!isNewLinkFormOpened" class="mt-4 mb-4">
+    <button class="btn btn-info" (click)="isNewLinkFormOpened = true">Add new Link</button>
+  </div>
+  <div *ngIf="isNewLinkFormOpened" class="form-section">
+    <app-add-link (save)="addLink($event)"></app-add-link>
+  </div>
+</div>

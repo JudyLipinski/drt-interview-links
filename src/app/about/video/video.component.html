@@ -1,0 +1,11 @@
+<ng-container *ngIf="isYoutubeSource; else videoSource">
+  <youtube-player autoplay="true" [videoId]="generateYoutubeId(source)" (ready)="savePlayer($event)"
+    (change)="onStateChange($event)">
+  </youtube-player>
+</ng-container>
+<ng-template #videoSource>
+  <video (ended)="sourceEnded()" width="400" controls autoplay>
+    <source [src]="source">
+    Your browser does not support HTML5 video.
+  </video>
+</ng-template>

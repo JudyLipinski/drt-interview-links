@@ -1,0 +1,5 @@
+<div>
+  <ng-container *ngFor="let item of data; let i = index">
+    <app-link-info *ngIf="i !== 0" [data]="item" (delete)="removeItem(item.id)"></app-link-info>
+  </ng-container>
+</div>

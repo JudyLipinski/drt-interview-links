@@ -1,0 +1,11 @@
+.item-name {
+  min-width: 200px;
+}
+
+.item-delete {
+  min-width: 100px;
+}
+
+.item-link {
+  word-break: break-all;
+}
