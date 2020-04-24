@@ -1,0 +1,20 @@
+<!-- Editable table -->
+<div class="card">
+    <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Course List</h3>
+    <div class="card-body">
+        <div id="table" class="table-editable">
+            <span class="table-add  mb-3 mr-2" style="float: left;">
+                <a class="text-success">
+                    <input type="text" placeholder="search" class="searchBar" [(ngModel)]="searchKeyword" />
+                </a>
+            </span>
+            <span class="table-add float-right mb-3 mr-2">
+                <a class="text-success">
+                    <button type="button" class="btnAdd" (click)="add()">Add Course</button>
+                </a>
+            </span>
+            <app-table (remove)="remove($event)" [courseList]="courseList" [searchKeyword]="searchKeyword"></app-table>
+        </div>
+    </div>
+</div>
+<!-- Editable table -->

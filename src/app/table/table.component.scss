@@ -1,0 +1,38 @@
+@media all and (min-width: 768px) {
+    tr  {
+      td {
+        vertical-align: middle !important;
+      }
+      span {
+        &:not([class]) {
+          padding: 1rem 1rem;
+        }
+      }
+    }
+  }
+
+  .trHeader{
+      background-color: #4FA9DC;
+      color: white;
+  }
+
+  .btnDnger{
+    background-color: #ff3547;
+    color: #fff;
+    padding: .5rem 1.6rem;
+    font-size: .64rem;
+    border-radius: 10em!important;
+  }
+
+  .btnAdd{
+    background-color: #44963E;
+    color: #fff;
+    padding: .5rem 1.6rem;
+    font-size: .64rem;
+    border-radius: 10em!important;
+  }
+
+  .searchBar{
+    border: 0px;
+    border-bottom: 1px solid gainsboro;
+  }
